@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programar Tarea - MyHuertingWeb</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styleProgramar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/menuPrincipal/menuPrincipal.html" class="logo-link"><img src="images/arrow.svg" alt="Volver"></a>
+        <h1>📅 Programar Tarea</h1>
+    </header>
+
+    <section class="form-container" id="programar-tareas">
+        <form enctype="multipart/form-data">
+            <label for="titulo">Título de la tarea</label>
+            <input type="text" id="titulo" name="titulo">
+            <div class="error" id="error-titulo"></div>
+
+            <label for="miembro">Asignar miembro</label>
+            <select id="miembro" name="miembro">
+                <option value="">-- Selecciona un miembro --</option>
+            </select>
+            <div class="error" id="error-miembro"></div>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+            <div class="error" id="error-fecha"></div>
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora">
+            <div class="error" id="error-hora"></div>
+
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+            <div class="error" id="error-descripcion"></div>
+
+            <label for="archivo">Documento adjunto (PDF opcional)</label>
+            <input type="file" id="archivo" name="archivo" accept=".pdf">
+            <div class="error" id="error-archivo"></div>
+
+            <button type="submit" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+                <div class="text">Programar</div>
+            </button>
+        </form>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

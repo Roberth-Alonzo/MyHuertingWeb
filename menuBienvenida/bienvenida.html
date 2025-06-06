@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHuertingWeb</title>
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container" id="inicio">
+            <div class="nav__logo">
+                <h2 class="nav__title">MyHuertingWeb</h2>
+            </div>
+            <UL class="nav__link nav__link--menu">
+                <li class="nav_items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#about" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contacto" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contexto" class="nav__links">Contexto</a>
+                </li>
+                <div class="nav__inputs">
+                    <button type="button" onclick="window.location.href='/registro/registro.html'" class="nav__submit">Regístrate</button>
+                    <button type="button" onclick="window.location.href='/login/login.html'" class="nav__submit">Inicia Sesión</button>
+                </div>
+                <img src="./images/close.svg" class="nav__close" alt="">
+            </UL>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" alt="">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Aprende a gestionar un huerto comunitario desde cero</h1>
+            <p class="hero__paragraph">Elige aprender cada aspecto de un huerto comunitario, desde el más básico hasta el más complejo. Dentro del 
+            sistema tendrás acceso a un monton de guias sobre el cuidado de plantas, optimización de recursos y espacios, entre otras múltiples 
+            opciones.</p>
+            <a href="#inicio" class="cta">Empieza ya</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about" id="about">
+            <h2 class="subtitle"> ¿Qué aprenderas en este sistema?</h2>
+            <p class="about__paragraph"> Todo lo necesario y obligatorio sobre la gestión de huertos comunitarios (Tipos de plantas, Cuidado de plantas, Optimización de recursos, Fertilización ecologíca y más)</p>
+            
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/planta.svg"class="about__icon">
+                    <h3 class="about__title">Gestión de Cultivos</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit saepe corporis neque ipsa.</p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/ecologico.svg"class="about__icon">
+                    <h3 class="about__title">Asignación de Tares</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit saepe corporis neque ipsa.</p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/gota.svg"class="about__icon">
+                    <h3 class="about__title">Guías en Videos</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit saepe corporis neque ipsa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">Sistema de Gestión de Huertos Hurbanos Comunitarios ¡Domina todos los aspectos esenciales!</h2>
+                    <p class="knowledge__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos hic veritatis, est similique et? Minima voluptatibus animi earum aliquam consequatur. Illo voluptatum nam nesciunt assumenda maxime veritatis omnis aperiam!</p>
+                    <a href="#inicio" class="cta">Ingresa al Sistema</a>
+                </div>
+                <figure class="knowledge_picture">
+                    <img src="./images/huerto.jpg" alt="" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="suport container">
+            <h2 class="subtitle">Recursos del Sistema</h2>
+            <div class="suport__table">
+                <div class="suport__element">
+                    <h3 class="suport__name">Guías</h3>
+                    <img src="./images/guide.svg"class="suport__icon">
+                    <div class="suport__items">
+                        <p class="suport__features">Agregar Cultivos</p>
+                        <p class="suport__features">Consejos de Cosecha</p>
+                        <p class="suport__features">Asignación de Tareas</p>
+                    </div>
+                </div>
+                <div class="suport__element suport__element--best">
+                    <h3 class="suport__name">Comunidad</h3>
+                        <img src="./images/group.svg"class="suport__icon">
+                    <div class="suport__items">
+                        <p class="suport__features">Foros de ayuda</p>
+                        <p class="suport__features">Grupos de discusión</p>
+                        <p class="suport__features">Asesoramiento entre usuarios</p>
+                    </div>
+                </div>
+                <div class="suport__element">
+                    <h3 class="suport__name">Soporte Técnico</h3>
+                    <img src="./images/support.svg"class="suport__icon">
+                    <div class="suport__items">
+                        <p class="suport__features">Manual de usuario</p>
+                        <p class="suport__features">Asistencia técnica</p>
+                        <p class="suport__features">Resolución de problemas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony" id="contacto">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" alt="" class="testimony__arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Roberth Alexander, <span class="testimony__course">Estudiante de la ULEAM</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro consequatur dolores earum veniam consequuntur excepturi repellendus, reiciendis voluptatum. Itaque error quas pariatur ratione ea facere quo voluptates minus, ex voluptatum.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/foto2.jpg" alt="" class="testimony__img">
+                    </figure>
+                </section>
+                <img src="./images/rightarrow.svg" alt="" class="testimony__arrow" id="next">
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Franklin Vicente, <span class="testimony__course">Estudiante de la ULEAM</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro consequatur dolores earum veniam consequuntur excepturi repellendus, reiciendis voluptatum. Itaque error quas pariatur ratione ea facere quo voluptates minus, ex voluptatum.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/foto1.jpg" alt="" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Jose Antonio, <span class="testimony__course">Estudiante de la ULEAM</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro consequatur dolores earum veniam consequuntur excepturi repellendus, reiciendis voluptatum. Itaque error quas pariatur ratione ea facere quo voluptates minus, ex voluptatum.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/foto3.jpg" alt="" class="testimony__img">
+                    </figure>
+                </section>
+
+            </div>
+        </section>
+
+        <section class="questions container" id="contexto">
+            <h2 class="subtitle">Incógnitas</h2>
+            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ex reiciendis, incidunt optio cumque facere!</p>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es la ULEAM?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" alt="" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga aperiam perferendis dolore unde omnis dicta recusandae. Quasi omnis officia rem, veritatis asperiores excepturi earum ipsa sequi quas aliquid veniam ab distinctio exercitationem numquam incidunt deleniti! Voluptas accusantium expedita, veritatis, rem incidunt dignissimos ullam delectus error quos vitae aut aliquam esse inventore, earum fuga porro aliquid. Fuga doloribus a atque.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es Aplicaciones Web?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" alt="" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga aperiam perferendis dolore unde omnis dicta recusandae. Quasi omnis officia rem, veritatis asperiores excepturi earum ipsa sequi quas aliquid veniam ab distinctio exercitationem numquam incidunt deleniti! Voluptas accusantium expedita, veritatis, rem incidunt dignissimos ullam delectus error quos vitae aut aliquam esse inventore, earum fuga porro aliquid. Fuga doloribus a atque.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Por qué este proyecto?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" alt="" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga aperiam perferendis dolore unde omnis dicta recusandae. Quasi omnis officia rem, veritatis asperiores excepturi earum ipsa sequi quas aliquid veniam ab distinctio exercitationem numquam incidunt deleniti! Voluptas accusantium expedita, veritatis, rem incidunt dignissimos ullam delectus error quos vitae aut aliquam esse inventore, earum fuga porro aliquid. Fuga doloribus a atque.</p>
+                    </div>
+                </article>
+                <section class="questions__offer">
+                    <h2 class="subtitle">¿Estas listo para aprender a gestionar un Huerto Comunitario?</h2>
+                    <p class="questions__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sit assumenda reiciendis, placeat quia commodi qui quos mollitia earum itaque id nulla dolorum dolor? Sit perferendis dolorem consequatur assumenda animi?</p>
+                    <a href="#inicio" class="cta">Aprende Ahora</a>
+                </section>
+            </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">MyHuertingWeb</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav_items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#about" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#contacto" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#contexto" class="nav__links">Contexto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://chat.whatsapp.com/Lfd5UUzlXElHgjyB104ib1" target="_blank" class="footer__icons">
+                    <img src="./images/whatsapp.svg" class="footer__img">
+                </a>
+                <a href="https://x.com/MyHuertingWeb" target="_blank" class="footer__icons">
+                    <img src="./images/x.svg" class="footer__img">
+                </a>
+                <a href="https://www.instagram.com/my_huerting_web_/" target="_blank" class="footer__icons">
+                    <img src="./images/instagram.svg" class="footer__img">
+                </a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; MyHuertingWeb</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+</body>
+</html>
+

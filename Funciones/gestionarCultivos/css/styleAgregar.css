@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(50, 50, 50, 0.8);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: fixed;
+    top: 50%;
+    left: 30px; 
+    transform: translateY(-50%); 
+    z-index: 1000;
+    cursor: pointer;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-link img {
+    height: 50px; 
+    width: auto; 
+}
+
+.logo-link:hover {
+    transform: translateY(-50%) scale(1.1);  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #3ce744;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none; 
+    height: 1.5em; 
+    overflow-y: auto; 
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    height: auto;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #66bb6a;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #3ce744;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button {
+    font-size: 1.2rem; 
+    font-weight: 600;
+    background-color: #ffffff00;
+    color: #fff;
+    width: fit-content; 
+    padding: 0.5em 2em; 
+    border: #3ce744 0.2em solid;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    gap: 3em; 
+    transition: all 0.6s ease;
+    padding-right: 20px;
+}
+
+.button:hover {
+    background-color: #43ff367a;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 1.6em;
+    height: 1.9em;
+    position: absolute;
+    left: 10px;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    margin-top: 4px;
+}

@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    overflow: hidden;
+	background-image: url(../images/fondoI.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo-link {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.logo-link:hover {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.register-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.input-div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-div label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-div input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #d9d9d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-div input:focus {
+    outline: none;
+    border-color: #04a1fc;
+    box-shadow: 0 0 5px rgba(4, 161, 252, 0.5);
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background: #04a1fc;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #142e3d;
+    color: wheat;
+}
+
+.have-account {
+    margin: 15px 0 25px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.have-account a {
+    color: #04a1fc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.have-account a:hover {
+    color: #142e3d;
+    text-decoration: underline;
+}

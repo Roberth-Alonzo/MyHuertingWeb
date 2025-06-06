@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inicio de Sesión</title>
+   <link rel="stylesheet" type="text/css" href="css/estilo.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+   <link rel="preload" href="./images/fondoF.jpg" as="image">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+   <a href="/menuBienvenida/bienvenida.html" class="logo-link">MyHuertingWeb</a>
+   <div class="container">
+      <div class="login-content">
+         <form id="login-form" method="post" action="">
+            <img src="images/avatar.svg">
+            <h2 class="title">BIENVENIDO</h2>
+
+            <div class="input-div one">
+               <div class="i">
+                  <i class="fas fa-user"></i>
+               </div>
+               <div class="div">
+                  <h5>Email</h5>
+                  <input id="email" type="email" class="input" name="email" required>
+               </div>
+            </div>
+            <div class="input-div pass">
+               <div class="i">
+                  <i class="fas fa-lock"></i>
+               </div>
+               <div class="div">
+                  <h5>Contraseña</h5>
+                  <input type="password" id="input" class="input" name="password" required>
+               </div>
+            </div>
+            <div class="view">
+               <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
+            </div>
+            
+            <div class="text-center">
+               <a class="font-italic isai5" href="../registro/registro.html">Registrarse</a>
+            </div>
+            <input class="btn" type="submit" value="INICIAR SESIÓN">
+         </form>
+      </div>
+   </div>
+   
+   <script src="js/fontawesome.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/main2.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/bootstrap.bundle.js"></script>
+   <script src="js/login.js"></script>
+   
+</body>
+
+</html>

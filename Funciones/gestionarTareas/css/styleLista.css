@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(50, 50, 50, 0.8);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: fixed;
+    top: 50%;
+    left: 30px; 
+    transform: translateY(-50%); 
+    z-index: 1000;
+    cursor: pointer;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-link img {
+    height: 50px; 
+    width: auto; 
+}
+
+.logo-link:hover {
+    transform: translateY(-50%) scale(1.1);  
+}
+
+.form-container {
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    table-layout: fixed;
+}
+
+#tabla-tareas td:nth-child(1),
+#tabla-tareas th:nth-child(1),
+#tabla-tareas td:nth-child(4),
+#tabla-tareas th:nth-child(4) {
+    width: 200px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background-color: rgba(102, 187, 106, 0.8);
+    color: #fff;
+}
+
+a {
+    color: #a5d6a7;
+    text-decoration: underline;
+}
+
+.estado-realizada {
+    color: #66bb6a;
+    font-weight: bold;
+}
+
+.estado-pendiente {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.btn-eliminar {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    padding: 8px 10px 6px 10px;
+    border: 3px solid #e62222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    transition: background-color 200ms, border-color 200ms; 
+    background-color: transparent;
+}
+
+.btn-eliminar:hover {
+    background-color: rgba(255, 0, 0, 0.401); 
+    border-color: #ff3636; 
+}

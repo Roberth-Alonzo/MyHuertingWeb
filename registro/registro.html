@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="/registro/css/validaciones_registro.css">
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="/menuBienvenida/bienvenida.html" class="logo-link">MyHuertingWeb</a>
+    <div class="container">
+        <div class="register-content">
+            <form id="register-form" method="post" action="">
+                <h2 class="title">REGISTRO</h2>
+                
+                <div class="input-div">
+                    <label for="nombre">Nombre completo</label>
+                    <input id="nombre" type="text" name="nombre"/>
+                    <span class="error" id="nombreError"></span>
+                </div>
+
+
+                <div class="input-div">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email"/>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="input-div">
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" name="password"/>
+                    <div id="strengthMeter"><div class="strength-bar"></div></div>
+                    <span id="strengthText"></span>
+                    <span class="error" id="passwordError"></span>
+                </div>
+
+                <div class="input-div">
+                    <label for="passwordConfirm">Confirmar contraseña</label>
+                    <input id="passwordConfirm" type="password" name="passwordConfirm"/>
+                    <span class="error" id="passwordConfirmError"></span>
+                </div>
+
+
+                <p class="have-account">
+                    ¿Ya tienes cuenta? <a href="/login/login.html">Inicia sesión</a>
+                </p>
+                <input class="btn" type="submit" value="REGISTRARSE" />
+            </form>
+        </div>
+    </div>
+
+    <script src="/registro/js/validaciones_registro.js"></script>
+</body>
+
+</html>
