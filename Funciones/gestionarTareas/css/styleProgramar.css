@@ -80,8 +80,9 @@ textarea {
     border-radius: 10px;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    height: 1.5em;
+    height: 1.5em; 
+    font-family: 'poppins', sans-serif;
+    color: #555;
 }
 
 textarea {
