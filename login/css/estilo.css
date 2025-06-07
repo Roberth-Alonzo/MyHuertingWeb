@@ -156,7 +156,7 @@ form{
 	padding: 0.5rem 0.7rem;
 	font-size: 1rem;
 	color: #555;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: 'poppins', sans-serif;
 }
 .input-div > div > select{
 	position: absolute;
