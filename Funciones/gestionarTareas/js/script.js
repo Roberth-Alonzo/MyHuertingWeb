@@ -184,39 +184,10 @@ function eliminarTarea(index) {
     cargarTareas();
 }
 
-// Guardar asignación
-function guardarAsignacion(event) {
-    event.preventDefault();
-
-    const miembro = document.getElementById("miembro").value;
-    const responsabilidad = document.getElementById("responsabilidad").value.trim();
-    const prioridad = document.getElementById("prioridad").value;
-
-    if (!miembro || !responsabilidad || !prioridad) {
-        alert("Por favor, completa todos los campos.");
-        return false;
-    }
-
-    const nuevaAsignacion = {
-        miembro,
-        responsabilidad,
-        prioridad,
-        estado: "Pendiente"
-    };
-
-    const asignaciones = JSON.parse(localStorage.getItem("asignaciones")) || [];
-    asignaciones.push(nuevaAsignacion);
-    localStorage.setItem("asignaciones", JSON.stringify(asignaciones));
-
-    window.location.href = "responsabilidades.html";
-    return false;
-}
-
 // Evento al cargar DOM
 document.addEventListener("DOMContentLoaded", function () {
     cargarMiembros();
     cargarTareas();
-    cargarResponsabilidades();
 
     // Agregar listener al formulario para controlar submit
     const form = document.querySelector('form');
