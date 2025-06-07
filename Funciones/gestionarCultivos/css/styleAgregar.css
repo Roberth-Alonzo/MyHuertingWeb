@@ -80,6 +80,8 @@ textarea {
     height: 1.5em; 
     overflow-y: auto; 
     margin-bottom: 5px;
+    font-family: 'poppins', sans-serif;
+    color: #555;
 }
 
 textarea {
