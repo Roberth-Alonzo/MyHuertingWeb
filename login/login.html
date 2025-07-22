@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,6 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
-
 <body>    
    <a href="/menuBienvenida/bienvenida.html" class="logo-link">MyHuertingWeb</a>
    <div class="container">
@@ -22,7 +20,6 @@
          <form id="login-form" method="post" action="">
             <img src="images/avatar.svg">
             <h2 class="title">BIENVENIDO</h2>
-
             <div class="input-div one">
                <div class="i">
                   <i class="fas fa-user"></i>
@@ -41,7 +38,6 @@
                   <input type="password" id="input" class="input" name="password" required>
                </div>
             </div>
-            <!-- Campo de código de administrador (solo apariencia) -->
             <div class="input-div admin-code">
                <div class="i">
                   <i class="fas fa-key"></i>
@@ -51,10 +47,19 @@
                   <input type="text" id="admin-code" class="input" name="admin-code" placeholder="Opcional">
                </div>
             </div>
+            <!-- Nuevo campo agregado -->
+            <div class="input-div phone">
+               <div class="i">
+                  <i class="fas fa-phone"></i>
+               </div>
+               <div class="div">
+                  <h5>Teléfono</h5>
+                  <input type="tel" id="phone" class="input" name="phone" placeholder="Opcional">
+               </div>
+            </div>
             <div class="view">
                <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
             </div>
-            
             <div class="text-center">
                <a class="font-italic isai5" href="../registro/registro.html">Registrarse</a>
             </div>
@@ -62,7 +67,6 @@
          </form>
       </div>
    </div>
-   
    <script src="js/fontawesome.js"></script>
    <script src="js/main.js"></script>
    <script src="js/main2.js"></script>
@@ -70,7 +74,5 @@
    <script src="js/bootstrap.js"></script>
    <script src="js/bootstrap.bundle.js"></script>
    <script src="js/login.js"></script>
-   
 </body>
-
 </html>
